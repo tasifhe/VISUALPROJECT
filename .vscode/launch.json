@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/tasif/AppData/Roaming/Code/User/snippets",
-      "program": "c:/Users/tasif/AppData/Roaming/Code/User/snippets/build/Debug/outDebug",
+      "cwd": "d:/VISUALPROJECT",
+      "program": "d:/VISUALPROJECT/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
