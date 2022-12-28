@@ -23,5 +23,6 @@ int main()
     {
         cout<<a[i]<<" ";
     }
+    system("Color A0");
     return 0;
 }
