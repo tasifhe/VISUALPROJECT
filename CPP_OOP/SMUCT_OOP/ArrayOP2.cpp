@@ -1,4 +1,4 @@
-//User define size array input & output
+//Print only odd index value
 #include<iostream>
 using namespace std;
 
@@ -10,7 +10,7 @@ int main()
     {
         cin>>a[i];
     }
-    for(int i=0;i<n;i++)
+    for(int i=1;i<n;i+=2)
     {
         cout<<a[i]<<" ";
     }

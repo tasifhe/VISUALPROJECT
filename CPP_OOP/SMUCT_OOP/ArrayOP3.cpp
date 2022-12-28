@@ -1,4 +1,4 @@
-//User define size array input & output
+//Print only odd values
 #include<iostream>
 using namespace std;
 
@@ -12,7 +12,10 @@ int main()
     }
     for(int i=0;i<n;i++)
     {
-        cout<<a[i]<<" ";
+        if(a[i]&1)
+        {
+            cout<<a[i]<<" ";
+        }
     }
     return 0;
 }
