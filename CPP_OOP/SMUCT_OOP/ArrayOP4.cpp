@@ -14,7 +14,6 @@ int main()
     {
         cin>>a[i];
     }
-    cout<<"The elemetns are: ";
     for(int i=0;i<n;i++)
     {
         sum+=a[i];
