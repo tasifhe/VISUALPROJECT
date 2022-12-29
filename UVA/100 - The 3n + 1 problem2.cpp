@@ -1,39 +1,35 @@
-#include<bits/stdc++.h>
+#include <iostream>
+
 using namespace std;
 
-int main()
-{
-    int a,b;
-    while ((cin>>a>>b))
-    {
-        int a1=a;
-        int b1=b;
-
-        if(a>b)
-        swap(a,b);
-
-        int ans=0, count;
-        while (a<=b)
-        {
-            count=1;
-            unsigned int n=a;
-            while (n!=1)
-            {
-                if(n%2 == 1)
-                {
-                    n=3*n+1;
-                }
-                else
-                {
-                    n/=2;
-                    count++;
-                }
-            }
-            if(count>ans)
-            ans=count;
-            a++;
+int computeCycleLength(int n) {
+    int cycle_length = 1;
+    while (n != 1) {
+        if (n % 2 == 0) {
+            n = n / 2;
+        } else {
+            n = 3 * n + 1;
         }
-        cout<<a1<<"  "<<b1<<"  "<<ans<<endl;
+        cycle_length++;
+    }
+    return cycle_length;
+}
+
+int maxCycleLength(int i, int j) {
+    int max_cycle_length = 0;
+    for (int n = i; n <= j; n++) {
+        int cycle_length = computeCycleLength(n);
+        if (cycle_length > max_cycle_length) {
+            max_cycle_length = cycle_length;
+        }
+    }
+    return max_cycle_length;
+}
+
+int main() {
+    int i, j;
+    while (cin >> i >> j) {
+        cout << i << " " << j << " " << maxCycleLength(i, j) << endl;
     }
     return 0;
 }

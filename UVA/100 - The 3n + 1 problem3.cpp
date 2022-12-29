@@ -1,38 +1,42 @@
-#include<bits/stdc++.h>
+#include <iostream>
+#include <unordered_map>
+
 using namespace std;
 
-int main()
-{
-    int a,b,c,ans,sum;
-    while (scanf("%d %d", &a, &b) == 2 &&a>0 &&a>0)
-    {
-        sum=0;
-        cout<<a<<b;
-        if(a>b)
-        {
-            c=b;
-            b=a;
-            a=c;
+unordered_map<int, int> memo;
+
+int computeCycleLength(int n) {
+    if (memo.count(n)) {
+        return memo[n];
+    }
+    if (n == 1) {
+        return 1;
+    }
+    int cycle_length;
+    if (n % 2 == 0) {
+        cycle_length = 1 + computeCycleLength(n / 2);
+    } else {
+        cycle_length = 1 + computeCycleLength(3 * n + 1);
+    }
+    memo[n] = cycle_length;
+    return cycle_length;
+}
+
+int maxCycleLength(int i, int j) {
+    int max_cycle_length = 0;
+    for (int n = i; n <= j; n++) {
+        int cycle_length = computeCycleLength(n);
+        if (cycle_length > max_cycle_length) {
+            max_cycle_length = cycle_length;
         }
     }
-    for(int i=a;i<=b;i++)
-    {
-        ans=1;
-        for(int j=i;j!=1;j=j)
-        {
-            if(j%2==0)
-            {
-                j/=2;
-            }
-            else
-            {
-                j=3*j+1;
-                ans+=1;
-            }
-            if(ans>=sum)
-            sum=ans;
-        }
-        cout<<sum<<endl;
+    return max_cycle_length;
+}
+
+int main() {
+    int i, j;
+    while (cin >> i >> j) {
+        cout << i << " " << j << " " << maxCycleLength(i, j) << endl;
     }
     return 0;
 }
