@@ -1,5 +1,5 @@
-//Right shift by one index
-#include<iostream>
+//*Array swaping
+#include <iostream>
 using namespace std;
 
 int main()
@@ -12,13 +12,13 @@ int main()
     {
         cin>>a[i];
     }
-    temp=a[n-1];
-    for(int i=n-2;i>=0;i--)
+    for(int i=0;i<n/2;i++)
     {
-        a[i+1]=a[i];
+        temp=a[i];
+        a[i]=a[n-1-i];
+        a[n-1-i]=temp;
     }
-    a[0]=temp;
-    cout<<"The modified array elements are: ";
+    cout<<"The swaped array elements are: ";
     for(int i=0;i<n;i++)
     {
         cout<<a[i]<<" ";

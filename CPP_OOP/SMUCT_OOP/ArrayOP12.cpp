@@ -1,5 +1,5 @@
-//Right shift by one index
-#include<iostream>
+//*Array Sorting
+#include <iostream>
 using namespace std;
 
 int main()
@@ -12,13 +12,19 @@ int main()
     {
         cin>>a[i];
     }
-    temp=a[n-1];
-    for(int i=n-2;i>=0;i--)
+    for(int i=0;i<n-1;i++)
     {
-        a[i+1]=a[i];
+        for(int j=0;j<n-1-i;j++)
+        {
+            if(a[j]>a[j+1])
+            {
+                temp=a[j];
+                a[j]=a[j+1];
+                a[j+1]=temp;
+            }
+        }
     }
-    a[0]=temp;
-    cout<<"The modified array elements are: ";
+    cout<<"The sorted array elements are: ";
     for(int i=0;i<n;i++)
     {
         cout<<a[i]<<" ";

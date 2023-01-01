@@ -1,16 +1,16 @@
-//*Array Left shift from a particular index
+//*Array right shift from a particular index
 #include <iostream>
 
 using namespace std;
 
-void left_shift(int arr[], int size, int shift_index)
+void right_shift(int arr[], int size, int shift_index)
 {
-    int last_element = arr[size - 1];
-    for (int i = size - 1; i > shift_index; i--)
+    int first_element = arr[0];
+    for (int i = 0; i < shift_index; i++)
     {
-        arr[i] = arr[i-1];
+        arr[i] = arr[i+1];
     }
-    arr[shift_index] = last_element;
+    arr[shift_index] = first_element;
 }
 
 int main()
@@ -29,7 +29,7 @@ int main()
     int shift_index;
     cin >> shift_index;
 
-    left_shift(arr, size, shift_index);
+    right_shift(arr, size, shift_index);
 
     cout << "The shifted array is: ";
     for (int i = 0; i < size; i++)

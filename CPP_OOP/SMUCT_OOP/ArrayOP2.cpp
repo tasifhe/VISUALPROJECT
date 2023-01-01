@@ -1,6 +1,5 @@
 //Print only odd index value
 #include<iostream>
-#include<stdlib.h>
 using namespace std;
 
 int main()

@@ -1,10 +1,10 @@
-//Right shift by one index
-#include<iostream>
+//*Transfer/copy one array to another array
+#include <iostream>
 using namespace std;
 
 int main()
 {
-    int a[101],n,temp;
+    int a[101],b[101],n;
     cout<<"Enter the array size: ";
     cin>>n;
     cout<<"Enter the array elements: ";
@@ -12,16 +12,14 @@ int main()
     {
         cin>>a[i];
     }
-    temp=a[n-1];
-    for(int i=n-2;i>=0;i--)
-    {
-        a[i+1]=a[i];
-    }
-    a[0]=temp;
-    cout<<"The modified array elements are: ";
     for(int i=0;i<n;i++)
     {
-        cout<<a[i]<<" ";
+        b[i]=a[i];
+    }
+    cout<<"The copied array elements are: ";
+    for(int i=0;i<n;i++)
+    {
+        cout<<b[i]<<" ";
     }
     cout<<"\nDONE"<<endl;
     system("Color A0");
