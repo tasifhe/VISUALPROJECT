@@ -1,0 +1,1 @@
+{"name":"Local: nokol","url":"d:\\VISUALPROJECT\\nokol.cpp","tests":[{"id":1672330260165,"input":"5 3\n1 2 3 4 5","output":"2\n1 0 3 0 5"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\VISUALPROJECT\\nokol.cpp","group":"local","local":true}
