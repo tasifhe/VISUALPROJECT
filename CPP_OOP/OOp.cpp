@@ -4,7 +4,7 @@
 using namespace std;
 class THE
 {
-    public:         //PUBLIC ACCESS MODIFIER
+    public:         //*PUBLIC ACCESS MODIFIER
     string name;
     string title;
     int age;
