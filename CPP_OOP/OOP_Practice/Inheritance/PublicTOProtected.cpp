@@ -1,5 +1,5 @@
 //* Inheritance: Public to Protected is accessible
-//* Throught public function
+//* Through using public function
 #include<bits/stdc++.h>
 using namespace std;
 

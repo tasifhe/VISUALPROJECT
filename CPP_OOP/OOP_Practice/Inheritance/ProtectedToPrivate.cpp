@@ -1,5 +1,5 @@
-//* Inheritance: Protected to Private is accessible
-//* Through using public function
+//* Inheritance: Protected to Private is not accessible
+//* Even Through using public function
 #include<bits/stdc++.h>
 using namespace std;
 
