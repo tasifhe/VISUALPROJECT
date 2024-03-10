@@ -1,0 +1,15 @@
+d:\VISUAL_WORKSPACES\C#_Practice\bin\Debug\net6.0\C#_Practice.exe
+d:\VISUAL_WORKSPACES\C#_Practice\bin\Debug\net6.0\C#_Practice.deps.json
+d:\VISUAL_WORKSPACES\C#_Practice\bin\Debug\net6.0\C#_Practice.runtimeconfig.json
+d:\VISUAL_WORKSPACES\C#_Practice\bin\Debug\net6.0\C#_Practice.dll
+d:\VISUAL_WORKSPACES\C#_Practice\bin\Debug\net6.0\C#_Practice.pdb
+d:\VISUAL_WORKSPACES\C#_Practice\obj\Debug\net6.0\C#_Practice.csproj.AssemblyReference.cache
+d:\VISUAL_WORKSPACES\C#_Practice\obj\Debug\net6.0\C#_Practice.GeneratedMSBuildEditorConfig.editorconfig
+d:\VISUAL_WORKSPACES\C#_Practice\obj\Debug\net6.0\C#_Practice.AssemblyInfoInputs.cache
+d:\VISUAL_WORKSPACES\C#_Practice\obj\Debug\net6.0\C#_Practice.AssemblyInfo.cs
+d:\VISUAL_WORKSPACES\C#_Practice\obj\Debug\net6.0\C#_Practice.csproj.CoreCompileInputs.cache
+d:\VISUAL_WORKSPACES\C#_Practice\obj\Debug\net6.0\C#_Practice.dll
+d:\VISUAL_WORKSPACES\C#_Practice\obj\Debug\net6.0\refint\C#_Practice.dll
+d:\VISUAL_WORKSPACES\C#_Practice\obj\Debug\net6.0\C#_Practice.pdb
+d:\VISUAL_WORKSPACES\C#_Practice\obj\Debug\net6.0\C#_Practice.genruntimeconfig.cache
+d:\VISUAL_WORKSPACES\C#_Practice\obj\Debug\net6.0\ref\C#_Practice.dll

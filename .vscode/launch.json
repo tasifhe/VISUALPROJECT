@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/VISUALPROJECT",
-      "program": "d:/VISUALPROJECT/build/Debug/outDebug",
+      "cwd": "d:/VISUAL_WORKSPACES",
+      "program": "d:/VISUAL_WORKSPACES/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
